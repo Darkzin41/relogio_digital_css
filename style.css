@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background-image: url(Anime-Jujutsu-Kaisen-Manga-Series-Background-Wallpaper-105631.jpg);
+  backdrop-filter: blur(4px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#titulo {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: #fff 0px 0px 10px, #000 5px 0px 20px;
+}
+/* referente ao container inteiro do relogio */
+.relogio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  width: 550px;
+  background-attachment: transparent;
+  border-radius: 20px;
+  box-shadow: 1px 2px 10px 8px rgba(0, 0, 0, 0.5);
+}
+/* referente aos 3 containers do relogio */
+.cards {
+  height: 170px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #fff;
+  text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #fff;
+  background: rgba(50, 54, 70, 0.61);
+  box-shadow: 2px 2px 12px #000;
+  border-radius: 20px;
+  letter-spacing: 3px;
+}
+/* chamadndo cada span id dentro dos cards (os numeros) */
+.cards span#horas,
+#minutos,
+#segundos {
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.tempo {
+  font-size: 12px;
+  margin-top: 10%;
+}
+/* atribuindo tamanho para ser responsivo */
+@media (max-width: 600px) {
+  .relogio {
+    height: 200px;
+    width: 370px;
+  }
+  .cards {
+    height: 140px;
+    width: 100px;
+  }
+  .tempo {
+    font-size: 10px;
+  }
+
+  .cards span#horas,
+  #minutos,
+  #segundos {
+    font-size: 50px;
+  }
+}
